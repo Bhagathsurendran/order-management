@@ -46,9 +46,6 @@ export default function DashboardPage() {
           {/* Page Header */}
           <div>
             <h1 className="text-2xl font-bold text-slate-800">Dashboard</h1>
-            <p className="text-slate-400 text-sm mt-1">
-              Real-time overview of your order management system
-            </p>
           </div>
 
           {/* KPI Cards */}
