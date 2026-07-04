@@ -34,13 +34,13 @@ export function Pagination({
 
   return (
     <div className="flex items-center justify-between py-4">
-      <p className="text-sm text-gray-500">
+      <p className="text-sm text-slate-500">
         Showing{" "}
-        <span className="font-medium text-gray-300">
+        <span className="font-medium text-slate-900">
           {start}–{end}
         </span>{" "}
         of{" "}
-        <span className="font-medium text-gray-300">{total}</span> orders
+        <span className="font-medium text-slate-900">{total}</span> orders
       </p>
 
       <div className="flex items-center gap-1">
@@ -49,7 +49,7 @@ export function Pagination({
           size="icon"
           onClick={() => onPageChange(page - 1)}
           disabled={page <= 1}
-          className="h-8 w-8 text-gray-400 hover:text-white disabled:opacity-30"
+          className="h-8 w-8 text-slate-400 hover:text-slate-900 disabled:opacity-30"
         >
           <ChevronLeft className="w-4 h-4" />
         </Button>
@@ -63,8 +63,8 @@ export function Pagination({
             className={cn(
               "h-8 w-8 text-sm",
               p === page
-                ? "bg-violet-600/30 text-violet-300 border border-violet-500/40"
-                : "text-gray-400 hover:text-white"
+                ? "text-violet-600 font-bold border border-violet-500/40"
+                : "text-slate-400 hover:text-slate-900"
             )}
           >
             {p}
@@ -76,7 +76,7 @@ export function Pagination({
           size="icon"
           onClick={() => onPageChange(page + 1)}
           disabled={page >= totalPages}
-          className="h-8 w-8 text-gray-400 hover:text-white disabled:opacity-30"
+          className="h-8 w-8 text-slate-400 hover:text-slate-900 disabled:opacity-30"
         >
           <ChevronRight className="w-4 h-4" />
         </Button>

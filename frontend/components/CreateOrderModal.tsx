@@ -84,7 +84,7 @@ export function CreateOrderModal({ open, onClose }: CreateOrderModalProps) {
             <Input
               id="customer_name"
               {...register("customer_name")}
-              placeholder="e.g. John Doe"
+              placeholder="Name"
               className="bg-white border-slate-200 text-slate-850 placeholder:text-slate-300 focus:border-violet-500 focus:ring-2 focus:ring-violet-500/10"
             />
             {errors.customer_name && (
@@ -105,16 +105,13 @@ export function CreateOrderModal({ open, onClose }: CreateOrderModalProps) {
                 step="0.01"
                 min="0.01"
                 {...register("amount")}
-                placeholder="5000.00"
+                placeholder="Amount"
                 className="bg-white border-slate-200 text-slate-850 placeholder:text-slate-300 focus:border-violet-500 focus:ring-2 focus:ring-violet-500/10 pl-8"
               />
             </div>
             {errors.amount && (
               <p className="text-xs text-red-500 font-medium">{errors.amount.message}</p>
             )}
-            <p className="text-xs text-slate-400 font-medium">
-              Amount will be automatically converted to USD via live exchange rate.
-            </p>
           </div>
 
           <DialogFooter className="gap-2 pt-2">

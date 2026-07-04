@@ -162,7 +162,7 @@ export function OrderTable({
                     >
                       <DropdownMenuItem
                         onClick={() => router.push(`/orders/${order.id}`)}
-                        className="flex items-center gap-2 cursor-pointer focus:bg-slate-50 focus:text-slate-900"
+                        className="flex items-center gap-2 py-2.5 cursor-pointer focus:bg-slate-50 focus:text-slate-900"
                       >
                         <Eye className="w-4 h-4 text-slate-500" /> View Details
                       </DropdownMenuItem>
@@ -173,7 +173,7 @@ export function OrderTable({
                           onClick={() =>
                             updateStatus.mutate({ id: order.id, status })
                           }
-                          className="flex items-center gap-2 cursor-pointer focus:bg-slate-50 focus:text-slate-900"
+                          className="flex items-center gap-2 py-2.5 cursor-pointer focus:bg-slate-50 focus:text-slate-900"
                           disabled={updateStatus.isPending}
                         >
                           <RefreshCw className="w-3 h-3 text-slate-500" />
