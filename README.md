@@ -1,10 +1,10 @@
-# 🚀 Real-Time Order Management Dashboard
+Order Management
 
 A production-quality, full-stack order management system with real-time WebSocket updates, JWT authentication, currency conversion, and a modern admin dashboard.
 
 ---
 
-## ✨ Features
+## Features
 
 - **JWT Authentication** — Access + refresh tokens with rotation and Redis-backed blacklisting
 - **Real-Time Updates** — WebSocket broadcasts every order status change instantly
@@ -19,7 +19,7 @@ A production-quality, full-stack order management system with real-time WebSocke
 
 ---
 
-## 🛠 Tech Stack
+## Tech Stack
 
 | Layer | Technology |
 |---|---|
@@ -35,7 +35,7 @@ A production-quality, full-stack order management system with real-time WebSocke
 
 ---
 
-## 🚦 Seeded Credentials
+## Seeded Credentials
 
 | Username | Password | Role |
 | `admin` | `Admin@123` | Admin |
@@ -43,7 +43,7 @@ A production-quality, full-stack order management system with real-time WebSocke
 
 ---
 
-## ⚡ Quick Start (Docker — Recommended)
+## Quick Start (Docker — Recommended)
 
 ### 1. Clone and configure
 
@@ -88,7 +88,7 @@ The backend automatically runs `alembic upgrade head` (migrations + seed data) o
 
 ---
 
-## 💻 Run Locally (Without Docker)
+## Run Locally (Without Docker)
 
 ### Backend
 
@@ -131,7 +131,7 @@ npm run dev
 
 ---
 
-## 📁 Folder Structure
+## Folder Structure
 
 ```
 order-dashboard/
@@ -183,7 +183,7 @@ order-dashboard/
 
 ---
 
-## 📡 API Reference
+## API Reference
 
 ### Authentication
 | Method | Endpoint | Description |
@@ -215,7 +215,7 @@ order-dashboard/
 
 ---
 
-## 🏗 Architecture
+## Architecture
 
 ```
 Browser ←WebSocket→ FastAPI ←→ PostgreSQL
@@ -234,7 +234,7 @@ Zustand           ExchangeRate API
 
 ---
 
-## 🔒 Environment Variables
+## Environment Variables
 
 ### Backend (`backend/.env`)
 ```env
@@ -256,7 +256,7 @@ NEXT_PUBLIC_WS_URL=ws://localhost:8000
 
 ---
 
-## 🧪 Running Tests
+## Running Tests
 
 ```bash
 cd backend
@@ -266,7 +266,7 @@ pytest tests/ -v
 
 ---
 
-## 🐳 Docker Commands
+## Docker Commands
 
 ```bash
 # Start all services
